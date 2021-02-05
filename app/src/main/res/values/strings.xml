@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">RE kiosko_app</string>
+
+    <string name="aceptar">Aceptar</string>
+    <string name="cambiar">Cambiar datos</string>
+    <string name="confirmar">Confirmar orden</string>
+    <string name="banner">Banner</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="continuar">Continuar</string>
+    <string name="consumidor_id">9999999999</string>
+    <string name="consumidor_final">Consumidor Final</string>
+    <string name="correo">Email:</string>
+    <string name="datos_fact">Datos de factura</string>
+    <string name="direccion">Dirección: </string>
+    <string name="identificacion">Identificación:</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="mi_orden">Mi orden</string>
+    <string name="nombre">Nombre:</string>
+    <string name="pagar">Pagar</string>
+    <string name="para_llevar">Para llevar</string>
+    <string name="para_servir">Para servir</string>
+    <string name="powered">powered by : </string>
+    <string name="precio_total">$ 0.00</string>
+
+    <string name="salir">Salir</string>
+    <string name="sanduches">Sanduches</string>
+    <string name="telefono">Teléfono: </string>
+    <string name="total">Total</string>
+    <string name="tipo_identificacion">Tipo Identificación:</string>
+
+    <string name="guardar">Guardar</string>
+    <string name="pago">¿Cómo desea pagar?</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="tarjeta">Tarjeta</string>
+
+    <string name="ip">http://192.168.100.60:3555</string>
+    <string name="config">Configuración del Servidor</string>
+    <string name="panel">Panel de Administración</string>
+    <string name="reset_base">Resetear Base</string>
+    <string name="config_ip">Configurar IP</string>
+    <string name="inventario">Inventario</string>
+
+    <string name="imgDesc">image</string>
+    <string name="ordenar">Tocar para ordenar</string>
+
+    <string name="pedido">¿Cómo desea su pedido?</string>
+    <string name="cliente">Cliente</string>
+    <string name="item">Order item now</string>
+    <string name="cant">00</string>
+    <string name="producto">Producto</string>
+
+    <string name="cantidad">1</string>
+    <string name="desc">Descripción</string>
+    <string name="orden">Orden</string>
+    <string name="volver">Volver</string>
+
+    <string name="sub_total">Subtotal</string>
+    <string name="iva">IVA</string>
+
+    <string name="factura_datos">Factura con datos</string>
+    <string name="opcional">Opcional</string>
+
+    <string name="cedula">Cédula</string>
+    <string name="ruc">Ruc</string>
+
+
+
+    <string name="espera">Espera un momento</string>
+    <string name="generando">Generando orden de pago...</string>
+    <string name="procesando">Procesando pago...</string>
+    <string name="ingrese_tarjeta">Ingrese tarjeta</string>
+    <string name="retira_orden_pago">Retire la orden de pago y termine su pago en caja</string>
+    <string name="retira_factura">Retire su factura y espere un momento por su comida</string>
+    <string name="gracias">Gracias por su compra</string>
+
+    <string name="saliendo">¿Seguro deseas continuar?</string>
+
+    <string name="title404">¡Oh no!</string>
+    <string name="msg404">Al parecer alguien mordió el servidor</string>
+
+    <string name="titleNotFound">Lo sentimos</string>
+    <string name="msgNotFound">No hemos encontrado el recurso que estás buscando</string>
+
+</resources>

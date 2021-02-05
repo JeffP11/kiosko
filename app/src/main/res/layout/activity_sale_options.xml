@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".saleOptions.SaleOptions">
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mcbanner_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bodySO"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner">
+
+        <TextView
+            android:id="@+id/saleOptionsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="30dp"
+            android:autoSizeMaxTextSize="75sp"
+            android:autoSizeMinTextSize="25sp"
+            android:autoSizeStepGranularity="0.1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10sp"
+            android:text="@string/pedido"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/saleOptionsTxt">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/firstOptionImg"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/outline_button"
+                    android:backgroundTint="@color/transparentGray"
+                    android:contentDescription="@string/imgDesc"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/firstOptionTxt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/to_go" />
+
+                <TextView
+                    android:id="@+id/firstOptionTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:autoSizeMaxTextSize="80sp"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeStepGranularity="0.1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/para_llevar"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/secondOptionImg"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/outline_button"
+                    android:backgroundTint="@color/transparentGray"
+                    android:contentDescription="@string/imgDesc"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/red"
+                    app:layout_constraintBottom_toTopOf="@+id/secondOptionTxt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/for_here" />
+
+                <TextView
+                    android:id="@+id/secondOptionTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:autoSizeMaxTextSize="80sp"
+                    android:autoSizeMinTextSize="20sp"
+                    android:autoSizeStepGranularity="0.1sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/para_servir"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeMinTextSize="2sp"
+            android:autoSizeStepGranularity="0.1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/powered"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/contifico"
+            android:layout_width="98dp"
+            android:layout_height="17dp"
+            android:contentDescription="@string/powered"
+            app:srcCompat="@drawable/contifico" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/outline_button"
+        android:backgroundTint="@color/red"
+        android:drawableStart="@drawable/exit_2"
+        android:drawableTint="@color/red"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/salir"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

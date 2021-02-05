@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".billing.PayProcessing">
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mcbanner_2"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/waitingBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner">
+
+        <TextView
+            android:id="@+id/processingCardPay"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:autoSizeMaxTextSize="80sp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeStepGranularity="0.5sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10sp"
+            android:text="@string/procesando"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="82pt"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/waitingText2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:autoSizeMaxTextSize="80sp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeStepGranularity="0.5sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10sp"
+            android:text="@string/ingrese_tarjeta"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="82pt"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/makingPayOrder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:autoSizeMaxTextSize="80sp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeStepGranularity="0.5sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10sp"
+            android:text="@string/generando"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="82pt"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/waitingText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:autoSizeMaxTextSize="80sp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeStepGranularity="0.5sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="10sp"
+            android:text="@string/espera"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="82pt"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/swipeCard"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="centerCrop"
+            android:tint="@color/red"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waitingText2"
+            app:srcCompat="@drawable/swipe_card" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/waitingImg"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/waiting_animation"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/waitingText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/finalBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/centerBody"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/outline_button"
+            android:backgroundTint="@color/transparentGray"
+            android:contentDescription="@string/imgDesc"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:tint="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/finalTextCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:autoSizeMaxTextSize="80sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeStepGranularity="0.5sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="35dp"
+                android:text="@string/retira_factura"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/finalTextCash"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:autoSizeMaxTextSize="80sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeStepGranularity="0.5sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="35dp"
+                android:text="@string/retira_orden_pago"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/billImg"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/bill" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/powered"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/contifico"
+            android:layout_width="98dp"
+            android:layout_height="17dp"
+            android:contentDescription="@string/powered"
+            app:srcCompat="@drawable/contifico" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/finalScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/finalBanner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bigmac" />
+
+        <LinearLayout
+            android:id="@+id/finalText"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/finalColor"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/imgDesc"
+                android:padding="10sp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logomcdonalds"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/finalMsg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMaxTextSize="85sp"
+                android:autoSizeMinTextSize="2sp"
+                android:autoSizeStepGranularity="0.5sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="@string/gracias"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

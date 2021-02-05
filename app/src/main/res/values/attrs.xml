@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalScrollMenuView">
+        <attr name="icon_width" format="dimension" />
+        <attr name="icon_height" format="dimension" />
+        <attr name="backgroundMenuColor" format="color" />
+        <attr name="backgroundNotifications" format="color" />
+        <attr name="item_textColor" format="color" />
+        <attr name="item_backgroundColor" format="color" />
+        <attr name="item_marginTop" format="dimension" />
+        <attr name="item_marginBottom" format="dimension" />
+        <attr name="item_marginLeft" format="dimension" />
+        <attr name="item_marginRight" format="dimension" />
+        <attr name="item_colorSelected" format="color" />
+        <attr name="item_textSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

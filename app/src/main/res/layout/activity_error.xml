@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDesc"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mcbanner_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/e404Body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner">
+
+        <ImageView
+            android:id="@+id/img404"
+            android:layout_width="375dp"
+            android:layout_height="330dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/error_404" />
+
+        <LinearLayout
+            android:id="@+id/e404"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="225dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img404">
+
+            <TextView
+                android:id="@+id/title404"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="@string/title404"
+                android:textColor="@android:color/black"
+                android:textSize="52sp" />
+
+            <TextView
+                android:id="@+id/msg404"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:text="@string/msg404"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eNFBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBanner">
+
+        <ImageView
+            android:id="@+id/imgNF"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginTop="35dp"
+            android:contentDescription="@string/imgDesc"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/error_not_found" />
+
+        <LinearLayout
+            android:id="@+id/eNF"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="190dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgNF">
+
+            <TextView
+                android:id="@+id/titleNF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="@string/titleNotFound"
+                android:textColor="@android:color/black"
+                android:textSize="52sp" />
+
+            <TextView
+                android:id="@+id/msgNF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:text="@string/msgNotFound"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/errorFooter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/powered"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/contifico"
+                android:layout_width="98dp"
+                android:layout_height="17dp"
+                android:contentDescription="@string/powered"
+                app:srcCompat="@drawable/contifico" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/eExitBtn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/outline_button"
+        android:backgroundTint="@color/red"
+        android:drawableStart="@drawable/exit"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/salir"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/errorFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

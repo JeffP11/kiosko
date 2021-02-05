@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="back">#f4f4f4</color>
+    <color name="backDark">#c4c4c4</color>
+    <color name="backMate">#e8e8e8</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2063f1</color>
+    <color name="gray">#606060</color>
+    <color name="green">#4caf50</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparentBack">#38f4f4f4</color>
+    <color name="transparentGray">#38606060</color>
+    <color name="transparentWhite">#38ffffff</color>
+    <color name="transparentBlack">#38000000</color>
+
+    <color name="finalColor">#B3000000</color>
+
+</resources>
